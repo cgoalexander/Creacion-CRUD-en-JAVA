@@ -5,13 +5,17 @@
 
 package com.mycompany.registro_usuario;
 
+import conexionBD.conexionDb;
+import java.sql.SQLException;
+
 /**
  *
  * @author hp
  */
 public class Registro_usuario {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    public static void main(String[] args) throws SQLException {
+        conexionDb conexion1 = new conexionDb();
+        conexion1.primerQuery();
     }
 }
